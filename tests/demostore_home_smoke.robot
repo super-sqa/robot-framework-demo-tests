@@ -1,12 +1,14 @@
 *** Settings ***
 Library  SeleniumLibrary
 
-
+Suite Setup  Open Browser  about:blank  Chrome
+Suite Teardown  Close All Browsers
 
 
 *** Test Cases ***
-adfrun keyword if any tests failed
+Verify Home Page Title
 
     [Tags]  smoke
 
-    Open browser  http://demostore.supersqa.com  Chrome
+    Go to               http://demostore.supersqa.com
+    Title Should Be     DemoStore – Just another WordPress site
