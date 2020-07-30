@@ -12,3 +12,4 @@ Verify Home Page Title
 
     Go to               http://demostore.supersqa.com
     Title Should Be     DemoStore – Just another WordPress site
+
