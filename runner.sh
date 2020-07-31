@@ -2,4 +2,4 @@
 
 export PATH=$PATH:$(pwd)/webdriver/chromedriver/mac
 
-robot ./tests
+robot --include $1 ./tests
